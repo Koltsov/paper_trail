@@ -286,7 +286,7 @@ module PaperTrail
       #
       # @api private
       def record_object?
-        @record.class.paper_trail.version_class.column_names.include?("object")
+        false
       end
 
       # Returns an object which can be assigned to the `object` attribute of a
